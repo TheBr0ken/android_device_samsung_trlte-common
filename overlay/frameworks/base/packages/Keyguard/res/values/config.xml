@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2011, The Android Open Source Project
+** Copyright 2009, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,11 +17,13 @@
 */
 -->
 
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
-<resources>
+<!-- These resources are around just to allow their values to be customized -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Hardware keys enable/disable -->
-    <bool name="config_hwKeysPref">true</bool>
+    <!-- Threshold in micro amperes below which a charger is rated as "slow" -->
+    <integer name="config_chargingSlowlyThreshold">600</integer>
+
+    <!-- Threshold in micro amperes from which a charger is rated as "fast" -->
+    <integer name="config_chargingFastThreshold">750</integer>
 
 </resources>
