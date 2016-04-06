@@ -237,10 +237,6 @@ PRODUCT_PACKAGES += \
     libsamsung_symbols \
     libshim_qcopt
 
-# Torch
-PRODUCT_PACKAGES += \
-    Torch
-
 # WiFi packages
 PRODUCT_PACKAGES += \
     libnetcmdiface \
