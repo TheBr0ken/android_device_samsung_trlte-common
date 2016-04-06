@@ -264,5 +264,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     audio_hal.period_size=192
 
+# Set default Sounds
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Thunderfoot.ogg \
+    ro.config.alarm_alert=Cesium.ogg \
+    ro.config.notification_sound=Mira.ogg
+
 # Common Qualcomm
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
