@@ -22,6 +22,9 @@ $(call inherit-product-if-exists, vendor/samsung/trlte-common/trlte-common-vendo
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Maintain our own APNs list
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
