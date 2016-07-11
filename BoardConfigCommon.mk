@@ -148,3 +148,6 @@ WIFI_BUS := PCIE
 
 # Disable dex-preoptimization
 WITH_DEXPREOPT := false
+
+#SuperSU
+NEEDS_SYSTEMMODE_SU := true
